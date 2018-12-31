@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <VersionPrefix>0.2.0</VersionPrefix>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RuntimeIdentifiers>win-x86;win-x64;linux-x64;osx-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ataoge.Core" Version="2.2.0" />
+    <PackageReference Include="MathNet.Numerics" Version="4.7.0" />
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.2.5" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="NetTopologySuite.IO.ShapeFile" Version="1.15.2" />
+    <PackageReference Include="Npgsql" Version="4.0.4" />
+    <PackageReference Include="SQLitePCLRaw.bundle_green" Version="1.1.12" />
+  </ItemGroup>
+
+</Project>
