@@ -1,3 +1,4 @@
 Console Tools
 
-#dcitools --helper
+
+$dcitools --help

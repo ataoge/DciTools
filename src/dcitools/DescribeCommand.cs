@@ -222,7 +222,9 @@ namespace DCI.Tools
                 }
             }
             
-            var fileFullPath = Path.Combine(filePath, fileName);
+            var fileFullPath = filePath;
+            if (!string.IsNullOrEmpty(fileName))
+                fileFullPath = Path.Combine(filePath, fileName);
             if (File.Exists(fileFullPath))
             {
                 var ext = Path.GetExtension(fileFullPath);

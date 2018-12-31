@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/src/dcitools/bin/Debug/netcoreapp2.2/dcitools.dll",
-            "args": ["describe","-c", " postgresql://dmap:chinadci@online.chinadci.com/smartscenic","-t=userinfo"],
+            "args": [],
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopAtEntry": false,
