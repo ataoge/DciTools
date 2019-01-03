@@ -119,7 +119,7 @@ namespace DCI.Tools
                             }
                         }
                         
-                        
+                        npgConn.Close();
                         return 1;
                     case "sqlite":
                         var connString = $"Data Source={uri.LocalPath}";

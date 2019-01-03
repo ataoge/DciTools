@@ -29,7 +29,7 @@ namespace DCI.Tools
                 var filePath = shpCmd.Option("-f|--file", "Input Shapefile", CommandOptionType.SingleValue)
                         .IsRequired().Accepts(v => v.ExistingFile());
                 var index = shpCmd.Option<int>("-i|--index", "Grid Code Index", CommandOptionType.SingleValue)
-                        .Accepts(o => o.Range(0,10));
+                        .Accepts(o => o.Range(0,30));
                 var output = shpCmd.Option("-t|--output","output shapefile name", CommandOptionType.SingleValue);
                 var encoding = shpCmd.Option("-e|--encoding","dbf file encoding", CommandOptionType.SingleValue);
 

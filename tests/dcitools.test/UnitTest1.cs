@@ -12,5 +12,12 @@ namespace dcitools.test
         {
             var app =  CommandLineApplication.Execute<DescribeCommand>("-s","file://D:/BaiduYunDownload/aa/grid.shp");
         }
+
+         [Fact]
+        public void TestStats()
+        {
+            var app =  CommandLineApplication.Execute<StatsCommand>("--help");
+            //var app =  CommandLineApplication.Execute<StatsCommand>("-s","postgresql://dmap:chinadci@online.chinadci.com/smartscenic", "-t=userinfo");
+        }
     }
 }

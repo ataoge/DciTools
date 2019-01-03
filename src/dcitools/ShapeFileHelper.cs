@@ -44,6 +44,23 @@ namespace DCI.Tools
                 }
             }
         }
+
+
+        public static int FindIndex(string shapeFilePath, string filedName)
+        {
+            var factory = new GeometryFactory();
+
+            ShapefileDataReader reader = new ShapefileDataReader(shapeFilePath, factory);
+      
+            int length = reader.DbaseHeader.NumFields;
+            for(var i = 0; i< length; i++)
+            {
+                if (reader.DbaseHeader.Fields[i].Name.Equals(filedName, StringComparison.InvariantCultureIgnoreCase))
+                    return i+1;
+            }
+            return 0;
+        }
+
         public static void Compress(string shapeFilePath, int gridFieldIndex,  string encoding = null, string outputShapeFileName = "")
         {
             
